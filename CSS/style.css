@@ -1,0 +1,281 @@
+@font-face {
+    font-family:Bebas-Neue;
+    src: url(../assets/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Open-Sans;
+    src: url(../assets/OpenSans-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080324;
+}
+.layout-grid{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/******************** cabeçalho ********************/
+header .header-flex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+header{
+    background-color: #F9003D;
+    height: 60px;
+}
+header nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav a{
+    font-family:Bebas-Neue;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-shadow: 2px 2px 10px black;
+    padding: 15px;
+    border-radius: 5px;
+}
+header #menu-mobile{
+    display: none;
+}
+header nav a:hover{
+    text-shadow: 2px 2px 10px rgba(119, 0, 255, 0.3);
+    background-color: white;
+    color: #F9003D;
+}
+/******************** banner ********************/
+.banner{
+    background-image: url(../assets/imagem-fundo-banner.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 740px;
+}
+.banner-conteudo{
+    height: 95%;
+    display: flex;
+    align-items: end;
+}
+.banner-info{
+    width: 545px;
+    height: 452px;
+}
+#linha-banner{
+    border: 3px solid transparent;
+    border-bottom-color:#FFAF00;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+main article h1 {
+    font-size: 90px;
+    font-family: Bebas-Neue;
+    color: white;
+}
+.banner-info p {
+    font-size: 53px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #F9003D;
+    text-transform: uppercase;
+}
+#scroll{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+/******************** sobre os projetos ********************/
+#sobre-os-projetos{
+    height: 800px;
+    background-color: #080324;
+
+    display: flex;
+    align-items: center;
+}
+.projeto-info{
+    display: flex;
+    justify-content: space-between;
+    height: 617px;
+}
+#projeto-info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#projeto-info2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#h2-article1{
+    font-family: Bebas-Neue;
+    font-size: 64px;
+    color: #F9003D;
+}
+#h2-article2{
+    font-family: Bebas-Neue;
+    font-size: 64px;
+    color: #FFAF00;
+    margin: 15px 0px;
+}
+#img-projeto{
+    width: 491px;
+    height: 476px;
+}
+section aside article h3 {
+    font-size: 24px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+section aside article p{
+    font-size: 18px;
+    color: white;
+    font-family:Open-Sans;
+}
+/******************** informações ********************/
+#informacoes{
+    height: 200px;
+    background-image: url(../assets/imagem-fundo-info.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.layout-informacoes{
+    display: flex;
+    justify-content: space-between;
+}
+#informacoes article h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+}
+#informacoes article p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #A259F7;
+}
+#informacoes article div {
+    height: 100px;
+    width: 289px;
+    border: 2px solid #A259F7;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+/******************** rodapé ********************/
+footer{
+    height: 600px;
+    background-image: url(../assets/imagem-fundo-endereco.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+footer div h2{
+    font-family: Bebas-Neue;                                            
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #FFAF00;
+}
+footer article{
+    width: 899px;
+    height: 203px;
+    border: 1px solid #A259F7;
+    background-color: #010010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+footer article .mapa{
+    width: 309px;
+    height: 250px;
+
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+}
+footer article p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #A259F7;
+}
+.final{
+    background-color: #F9003D;
+    color: white;
+    font-family: Open-Sans;
+    font-size: 18px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+}
+/******************* MEDIA QUERIES **********************/
+
+/* smartphone >= 0px ate 767px  */
+@media screen and (max-width: 767px) {
+    header #menu-mobile{
+        display: block;
+    }
+    header nav {
+        position: fixed;
+        top: 60px;
+        left: -80vw;
+        background-color: #F9003D;
+        width: 80vw;
+        height: calc(100vh - 60px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: left 0.6s;
+        opacity: 0.6;
+   
+    }
+    header nav a {
+        padding: 20px 110px;
+    }
+    .MostrarMenu{
+        left: 0%;
+        opacity: 1;        
+    }
+    /*banner*/
+    main article h1 {
+        font-size: 40px;
+    }
+    #scroll {
+        display: none;
+    }
+    /*Projetos*/
+    #sobre-os-projetos{
+        flex-direction: column;
+    }
+    .projeto-info{
+        flex-direction: column;
+    }
+    #h2-article1 {
+        font-size: 35px;
+    }
+    #h2-article2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+}
