@@ -265,9 +265,14 @@ footer article p{
     /*Projetos*/
     #sobre-os-projetos{
         flex-direction: column;
+        height: 960px;
     }
     .projeto-info{
         flex-direction: column;
+    }
+    #projeto-info2{
+        width: 95%;
+        height: fit-content;
     }
     #h2-article1 {
         font-size: 35px;
@@ -277,5 +282,17 @@ footer article p{
     }
     h3 {
         font-size: 24px;
+    }
+    #img-projeto{
+        width: 95%;
+        height: 95%;
+    }
+    #informacoes{
+        height: 450px;
+        background-image: none        
+    }
+    .layout-informacoes{
+        flex-direction: column;
+        background-color: #080324;
     }
 }
